@@ -1,17 +1,26 @@
 /* Importación de fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* Variables de colores */
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
-  --success-color: #198754;
-  --info-color: #0dcaf0;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
+  --primary-color: #4361ee;
+  --primary-light: #4895ef;
+  --primary-dark: #3a0ca3;
+  --secondary-color: #7209b7;
+  --accent-color: #f72585;
+  --success-color: #4cc9f0;
+  --info-color: #4cc9f0;
+  --warning-color: #f7b801;
+  --danger-color: #f72585;
   --light-color: #f8f9fa;
   --dark-color: #212529;
-  --body-bg: #f8f9fa;
+  --body-bg: #f5f7fa;
+  --card-bg: #ffffff;
+  --text-primary: #2b2d42;
+  --text-secondary: #6c757d;
+  --gradient-primary: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
 }
 
 /* Reset y estilos base */
@@ -22,12 +31,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #212529;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  line-height: 1.7;
+  color: var(--text-primary);
   background-color: var(--body-bg);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   flex-direction: column;
 }
 

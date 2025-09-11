@@ -1,0 +1,110 @@
+// Estilos para la página de Aviso de Privacidad
+.aviso-privacidad {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+  
+      .card-body {
+        padding: 2.5rem;
+      }
+    }
+  
+    h1 {
+      color: #2c3e50;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+      padding-bottom: 1rem;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #3498db, #2ecc71);
+        border-radius: 2px;
+      }
+    }
+  
+    h2 {
+      color: #2980b9;
+      font-weight: 600;
+      margin: 1.8rem 0 1.2rem;
+      position: relative;
+      padding-left: 1rem;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 70%;
+        background: #3498db;
+        border-radius: 2px;
+      }
+    }
+  
+    h3 {
+      color: #16a085;
+      font-weight: 600;
+      margin: 1.5rem 0 1rem;
+    }
+  
+    ul {
+      padding-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 1.5rem;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          color: #2ecc71;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    p {
+      line-height: 1.7;
+      color: #2c3e50;
+      margin-bottom: 1.2rem;
+    }
+  
+    strong {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+  
+    .fecha-actualizacion {
+      background: #f1f8ff;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+      margin-top: 2rem;
+      font-style: italic;
+      color: #7f8c8d;
+    }
+  }
+  
