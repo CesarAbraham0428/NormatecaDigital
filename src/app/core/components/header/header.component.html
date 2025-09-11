@@ -1,21 +1,42 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" routerLink="/">Normateca Digital</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/aspectos-eticos-legales" routerLinkActive="active">Aspectos Éticos y Legales</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/estandares-manejo-info" routerLinkActive="active">Estándares de Información</a>
-        </li>
-      </ul>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="brand-wrapper">
+        <a class="navbar-brand" routerLink="/">
+          <div class="logo">
+            <img src="../../../../assets/logo.png" alt="Logo app" class="logo-img">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Normateca</span>
+            <span class="brand-subtitle">Digital</span>
+          </div>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <i class="bi bi-house-door"></i> Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/aspectos-eticos-legales" routerLinkActive="active">
+              <i class="bi bi-journal-text"></i> Aspectos Éticos y Legales
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/estandares-manejo-info" routerLinkActive="active">
+              <i class="bi bi-shield-check"></i> Estándares de Información
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
