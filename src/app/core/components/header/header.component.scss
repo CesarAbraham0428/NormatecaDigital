@@ -1,18 +1,41 @@
-.header {
-    background-color: rosybrown;
-    height: 5em;
+/* Estilos específicos para la barra de navegación */
+:host {
+  display: block;
+  width: 100%;
+}
 
-    &__container{
-        display: flex;
-        flex-direction: row;
-
-        justify-content: end;
-
-        a{
-            padding: 0 2em;
-            text-decoration: none;
-        }
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    &:hover {
+      color: #fff;
     }
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+    
+    &:hover, &.active {
+      color: #fff;
+    }
+  }
+}
 
-
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding-top: 1rem;
+    
+    .nav-item {
+      margin: 0.25rem 0;
+    }
+  }
 }

@@ -1,7 +1,21 @@
-<nav class="header">
-    <div class="header__container" >
-        <a routerLink="header__item">Inicio</a>
-        <a routerLink="header__item">Aspectos éticos y legales</a>
-        <a routerLink="header__item">Estándares del manejo de la información</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Normateca Digital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aspectos-eticos-legales" routerLinkActive="active">Aspectos Éticos y Legales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/estandares-manejo-info" routerLinkActive="active">Estándares de Información</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

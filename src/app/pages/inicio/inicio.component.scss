@@ -1,0 +1,43 @@
+// Estilos específicos para el componente de inicio
+
+// Estilos para las tarjetas
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    .btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+  }
+}
+
+// Estilos para el carrusel
+.carousel {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+  .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+// Ajustes responsivos
+@media (max-width: 768px) {
+  .carousel .carousel-item img {
+    max-height: 250px;
+  }
+}

@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { AspectosEticosLegalesComponent } from './pages/aspectos-eticos-legales/aspectos-eticos-legales.component';
+import { EstandaresManejoInfoComponent } from './pages/estandares-manejo-info/estandares-manejo-info.component';
+import { AvisoPrivacidadComponent } from './pages/aviso-privacidad/aviso-privacidad.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: InicioComponent },
+  { path: 'aspectos-eticos-legales', component: AspectosEticosLegalesComponent },
+  { path: 'estandares-manejo-info', component: EstandaresManejoInfoComponent },
+  { path: 'aviso-privacidad', component: AvisoPrivacidadComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
