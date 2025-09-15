@@ -14,6 +14,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { AspectosEticosLegalesComponent } from './pages/aspectos-eticos-legales/aspectos-eticos-legales.component';
 import { EstandaresManejoInfoComponent } from './pages/estandares-manejo-info/estandares-manejo-info.component';
 import { AvisoPrivacidadComponent } from './pages/aviso-privacidad/aviso-privacidad.component';
+import { LeyesCodigosComponent } from './pages/leyes-codigos/leyes-codigos.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { AvisoPrivacidadComponent } from './pages/aviso-privacidad/aviso-privaci
     // Componentes del Core
     FooterComponent,
     HeaderComponent,
-    
+
     // Componentes de Páginas
     InicioComponent,
     AspectosEticosLegalesComponent,
     EstandaresManejoInfoComponent,
-    AvisoPrivacidadComponent
+    AvisoPrivacidadComponent,
+    LeyesCodigosComponent
   ],
   imports: [
     BrowserModule,
